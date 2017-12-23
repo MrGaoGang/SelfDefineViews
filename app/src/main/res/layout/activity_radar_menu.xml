@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mrgao.com.mrgaoviews.MainActivity">
+
+    <mrgao.com.mrgaoviews.views.RadarMenuView
+        android:id="@+id/radarView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:position="right_bottom"
+        app:radius="180dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_pluse"
+            android:tag="Menu"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_people"
+            android:tag="People"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_phone"
+            android:tag="Phone"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_start"
+            android:tag="Start"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_work"
+            android:tag="Work"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_pluse"
+            android:tag="Plusss"/>
+    </mrgao.com.mrgaoviews.views.RadarMenuView>
+
+
+    <mrgao.com.mrgaoviews.views.RadarMenuView
+        android:id="@+id/radarViewleft"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:position="left_top"
+        app:radius="180dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_pluse"
+            android:tag="Menu"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_people"
+            android:tag="People"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_phone"
+            android:tag="Phone"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_start"
+            android:tag="Start"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_work"
+            android:tag="Work"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_pluse"
+            android:tag="Plusss"/>
+    </mrgao.com.mrgaoviews.views.RadarMenuView>
+
+    <mrgao.com.mrgaoviews.views.RadarMenuView
+        android:id="@+id/radarViewleftBottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:position="left_bottom"
+        app:radius="180dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_pluse"
+            android:tag="Menu"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_people"
+            android:tag="People"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_phone"
+            android:tag="Phone"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_start"
+            android:tag="Start"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_work"
+            android:tag="Work"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_pluse"
+            android:tag="Plusss"/>
+    </mrgao.com.mrgaoviews.views.RadarMenuView>
+
+    <mrgao.com.mrgaoviews.views.RadarMenuView
+        android:id="@+id/radarViewRightTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:position="right_top"
+        app:radius="180dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_pluse"
+            android:tag="Menu"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_people"
+            android:tag="People"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_phone"
+            android:tag="Phone"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_start"
+            android:tag="Start"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_work"
+            android:tag="Work"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_pluse"
+            android:tag="Plusss"/>
+    </mrgao.com.mrgaoviews.views.RadarMenuView>
+</android.support.constraint.ConstraintLayout>
