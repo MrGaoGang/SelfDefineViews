@@ -103,6 +103,8 @@ public class RadarMenuView extends ViewGroup implements View.OnClickListener {
                 final View childView = getChildAt(i + 1);//不在获取主按钮了
 
                 childView.setVisibility(GONE);//默认每个菜单不可见
+                childView.setFocusable(false);
+                childView.setClickable(false);
 
                 //此处画一个图，两个按钮之间的夹角为90°/(count-2),除开了一个主控件按钮
                 double degree = (Math.PI / 2) / (count - 2) * i;
@@ -236,6 +238,8 @@ public class RadarMenuView extends ViewGroup implements View.OnClickListener {
             final View childView = getChildAt(i + 1);
 
             childView.setVisibility(VISIBLE);
+            childView.setFocusable(true);
+            childView.setClickable(true);
 
             //此处画一个图，两个按钮之间的夹角为90°/(count-2),除开了一个主控件按钮
             double degree = (Math.PI / 2) / (getChildCount() - 2) * i;
@@ -259,10 +263,12 @@ public class RadarMenuView extends ViewGroup implements View.OnClickListener {
             if (mCurrentStatus == Status.CLOSE) {
                 translateAnimation = new TranslateAnimation(xflag * left,
                         0, yflag * top, 0);
+
             } else {
 
                 translateAnimation = new TranslateAnimation(0, xflag * left,
                         0, yflag * top);
+
             }
 
             translateAnimation.setFillAfter(true);
