@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mrgao.com.mrgaoviews.activitys.SimpleChartActivity">
+
+    <mrgao.com.mrgaoviews.views.SimpleChartView
+        android:layout_width="match_parent"
+        app:pointColor="@color/colorPrimary"
+        android:id="@+id/simplechar"
+        app:lineColor="@android:color/holo_red_dark"
+        android:layout_height="200dp"/>
+</android.support.constraint.ConstraintLayout>

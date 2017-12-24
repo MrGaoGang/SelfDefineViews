@@ -11,4 +11,9 @@
         </attr>
         <attr name="radius" format="dimension"/>
     </declare-styleable>
+
+    <declare-styleable name="SimpleChartView">
+        <attr name="lineColor" format="color"/>
+        <attr name="pointColor" format="color"/>
+    </declare-styleable>
 </resources>

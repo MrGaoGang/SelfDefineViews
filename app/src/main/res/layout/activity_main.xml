@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
+    android:layout_gravity="center"
     tools:context="mrgao.com.mrgaoviews.MainActivity">
 
     <Button
@@ -13,5 +14,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="雷达菜单"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/simpleBtn"
+        android:text="简单的折线图"
+        android:layout_height="wrap_content"/>
+
 
 </LinearLayout>
