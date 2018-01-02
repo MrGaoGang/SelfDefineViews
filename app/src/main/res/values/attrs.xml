@@ -2,6 +2,7 @@
 <resources>
 
 
+    <!--雷达菜单-->
     <declare-styleable name="RadarMenuView">
         <attr name="position">
             <enum name="left_top" value="0"/>
@@ -12,8 +13,23 @@
         <attr name="radius" format="dimension"/>
     </declare-styleable>
 
+    <!--折线图-->
     <declare-styleable name="SimpleChartView">
         <attr name="lineColor" format="color"/>
         <attr name="pointColor" format="color"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="PanelCircleView">
+        <attr name="centerTextSize" format="dimension"/>
+        <attr name="minCenterCircleRadius" format="dimension"/>
+        <attr name="outArcColor" format="color"/>
+        <attr name="fillColor" format="color"/>
+        <attr name="emptyColor" format="color"/>
+        <attr name="centerTextColor" format="color"/>
+        <attr name="pointerColor" format="color"/>
+        <attr name="scaleLength" format="dimension"/>
+        <attr name="scaleCount" format="integer"/>
+        <attr name="totalAngle" format="integer"/>
     </declare-styleable>
 </resources>
