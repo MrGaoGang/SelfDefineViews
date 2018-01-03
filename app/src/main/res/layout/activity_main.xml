@@ -27,4 +27,14 @@
         android:id="@+id/panelBtn"
         android:text="刻度盘"
         android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/huaweiBtn"
+        android:text="华为进度条"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/jump"
+        android:text="360跳跃"
+        android:layout_height="wrap_content"/>
 </LinearLayout>

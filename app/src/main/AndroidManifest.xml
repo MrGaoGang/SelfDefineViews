@@ -21,6 +21,10 @@
         </activity>
         <activity android:name=".activitys.PanelCircleActivity">
         </activity>
+        <activity android:name=".activitys.HuaWeiProgressActivity">
+        </activity>
+        <activity android:name=".activitys.My360JumpActivity">
+        </activity>
     </application>
 
 </manifest>

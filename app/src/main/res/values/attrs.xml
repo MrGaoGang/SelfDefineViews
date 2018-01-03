@@ -19,7 +19,7 @@
         <attr name="pointColor" format="color"/>
     </declare-styleable>
 
-
+    <!--方向盘进度条-->
     <declare-styleable name="PanelCircleView">
         <attr name="centerTextSize" format="dimension"/>
         <attr name="minCenterCircleRadius" format="dimension"/>
@@ -31,5 +31,20 @@
         <attr name="scaleLength" format="dimension"/>
         <attr name="scaleCount" format="integer"/>
         <attr name="totalAngle" format="integer"/>
+    </declare-styleable>
+
+    <!-- 仿华为圆形加载进度条 -->
+    <declare-styleable name="HuaWeiProgressView">
+        <attr name="progressColor" format="color"/>
+        <attr name="baseColor" format="color"/>
+        <attr name="dotColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="color"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="My360JumpView">
+        <attr name="centerLineColor" format="color"/>
+        <attr name="pointrColor" format="color"/>
     </declare-styleable>
 </resources>

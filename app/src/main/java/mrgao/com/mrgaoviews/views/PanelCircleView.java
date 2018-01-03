@@ -252,7 +252,9 @@ public class PanelCircleView extends View {
             mPercent = percent / 100;
         } else {
             Log.i(LOG, "invalid number  percent");
+            return;
         }
+
         invalidate();
     }
 
