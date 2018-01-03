@@ -24,7 +24,7 @@ import mrgao.com.mrgaoviews.R;
  * Description:
  */
 
-public class My360JumpView extends View {
+public class FlyBirdJumpView extends View {
     private int mWidth;
     private int mHeight;
 
@@ -52,19 +52,19 @@ public class My360JumpView extends View {
     private int mJumpCount = 2;//这个表示来回的跳跃次数
     private int mCurrentJumpCount = 0;
 
-    public My360JumpView(Context context) {
+    public FlyBirdJumpView(Context context) {
         this(context, null);
     }
 
-    public My360JumpView(Context context, @Nullable AttributeSet attrs) {
+    public FlyBirdJumpView(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public My360JumpView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public FlyBirdJumpView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.My360JumpView, defStyleAttr, 0);
-        mLineColor = typedArray.getColor(R.styleable.My360JumpView_centerLineColor, Color.BLUE);
-        mPointColor = typedArray.getColor(R.styleable.My360JumpView_pointrColor, Color.BLACK);
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.FlyBirdJumpView, defStyleAttr, 0);
+        mLineColor = typedArray.getColor(R.styleable.FlyBirdJumpView_centerLineColor, Color.BLUE);
+        mPointColor = typedArray.getColor(R.styleable.FlyBirdJumpView_pointrColor, Color.BLACK);
         typedArray.recycle();
 
         mStartPoint = new Point();

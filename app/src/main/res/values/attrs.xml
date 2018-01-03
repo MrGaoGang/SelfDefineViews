@@ -43,7 +43,7 @@
     </declare-styleable>
 
 
-    <declare-styleable name="My360JumpView">
+    <declare-styleable name="FlyBirdJumpView">
         <attr name="centerLineColor" format="color"/>
         <attr name="pointrColor" format="color"/>
     </declare-styleable>

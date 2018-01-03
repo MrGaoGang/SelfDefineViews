@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import mrgao.com.mrgaoviews.activitys.HuaWeiProgressActivity;
-import mrgao.com.mrgaoviews.activitys.My360JumpActivity;
+import mrgao.com.mrgaoviews.activitys.FlyBirdJumpActivity;
 import mrgao.com.mrgaoviews.activitys.PanelCircleActivity;
 import mrgao.com.mrgaoviews.activitys.RadarMenuActivity;
 import mrgao.com.mrgaoviews.activitys.SimpleChartActivity;
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         ((Button) findViewById(R.id.jump)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, My360JumpActivity.class));
+                startActivity(new Intent(MainActivity.this, FlyBirdJumpActivity.class));
             }
         });
     }

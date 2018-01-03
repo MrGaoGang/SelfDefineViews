@@ -5,10 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="mrgao.com.mrgaoviews.activitys.My360JumpActivity">
+    tools:context="mrgao.com.mrgaoviews.activitys.FlyBirdJumpActivity">
 
 
-    <mrgao.com.mrgaoviews.views.My360JumpView
+    <mrgao.com.mrgaoviews.views.FlyBirdJumpView
         android:layout_width="wrap_content"
         android:background="@color/soft_green"
         android:layout_height="wrap_content"/>

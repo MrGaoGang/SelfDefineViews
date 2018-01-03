@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import mrgao.com.mrgaoviews.R;
 
-public class My360JumpActivity extends AppCompatActivity {
+public class FlyBirdJumpActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
