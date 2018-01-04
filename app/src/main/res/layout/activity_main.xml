@@ -37,4 +37,10 @@
         android:id="@+id/jump"
         android:text="360跳跃"
         android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/water"
+        android:text="水波纹进度条"
+        android:layout_height="wrap_content"/>
 </LinearLayout>

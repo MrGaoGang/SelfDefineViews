@@ -11,6 +11,7 @@ import mrgao.com.mrgaoviews.activitys.FlyBirdJumpActivity;
 import mrgao.com.mrgaoviews.activitys.PanelCircleActivity;
 import mrgao.com.mrgaoviews.activitys.RadarMenuActivity;
 import mrgao.com.mrgaoviews.activitys.SimpleChartActivity;
+import mrgao.com.mrgaoviews.activitys.WaterProgressActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -60,6 +61,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, FlyBirdJumpActivity.class));
+            }
+        });
+
+        ((Button) findViewById(R.id.water)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, WaterProgressActivity.class));
             }
         });
     }

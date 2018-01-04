@@ -25,6 +25,8 @@
         </activity>
         <activity android:name=".activitys.FlyBirdJumpActivity">
         </activity>
+        <activity android:name=".activitys.WaterProgressActivity">
+        </activity>
     </application>
 
 </manifest>

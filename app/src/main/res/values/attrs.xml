@@ -42,9 +42,21 @@
         <attr name="textColor" format="color"/>
     </declare-styleable>
 
-
+    <!--仿愤怒小鸟弹弓-->
     <declare-styleable name="FlyBirdJumpView">
         <attr name="centerLineColor" format="color"/>
         <attr name="pointrColor" format="color"/>
+    </declare-styleable>
+
+    <!--水波纹进度条-->
+    <declare-styleable name="WaterProgressView">
+        <attr name="outProColor" format="color"/>
+        <attr name="outBaseColor" format="color"/>
+        <attr name="firstWaterColor" format="color"/>
+        <attr name="secondWaterColor" format="color"/>
+        <attr name="waterTextSize" format="dimension"/>
+        <attr name="waterTextColor" format="color"/>
+        <attr name="waveCount" format="integer"/>
+        <attr name="waveRange" format="dimension"/>
     </declare-styleable>
 </resources>
