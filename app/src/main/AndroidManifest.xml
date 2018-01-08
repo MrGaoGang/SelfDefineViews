@@ -27,6 +27,8 @@
         </activity>
         <activity android:name=".activitys.WaterProgressActivity">
         </activity>
+        <activity android:name=".activitys.QQBubbleActivity">
+        </activity>
     </application>
 
 </manifest>

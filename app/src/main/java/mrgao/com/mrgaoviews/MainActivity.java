@@ -9,6 +9,7 @@ import android.widget.Button;
 import mrgao.com.mrgaoviews.activitys.HuaWeiProgressActivity;
 import mrgao.com.mrgaoviews.activitys.FlyBirdJumpActivity;
 import mrgao.com.mrgaoviews.activitys.PanelCircleActivity;
+import mrgao.com.mrgaoviews.activitys.QQBubbleActivity;
 import mrgao.com.mrgaoviews.activitys.RadarMenuActivity;
 import mrgao.com.mrgaoviews.activitys.SimpleChartActivity;
 import mrgao.com.mrgaoviews.activitys.WaterProgressActivity;
@@ -68,6 +69,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, WaterProgressActivity.class));
+            }
+        });
+
+        ((Button) findViewById(R.id.qq)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, QQBubbleActivity.class));
             }
         });
     }

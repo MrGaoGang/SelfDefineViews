@@ -59,4 +59,13 @@
         <attr name="waveCount" format="integer"/>
         <attr name="waveRange" format="dimension"/>
     </declare-styleable>
+
+    <declare-styleable name="QQBubbleView">
+        <attr name="bubbleColor" format="color"/>
+        <attr name="bubbleTextColor" format="color"/>
+        <attr name="maxDistance" format="dimension"/>
+        <attr name="bubbleRadius" format="dimension"/>
+    </declare-styleable>
+
+
 </resources>
