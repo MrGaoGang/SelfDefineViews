@@ -29,6 +29,10 @@
         </activity>
         <activity android:name=".activitys.QQBubbleActivity">
         </activity>
+        <activity android:name=".activitys.ChargeBubbleActivity">
+        </activity>
+        <activity android:name=".activitys.RotateActivity">
+        </activity>
     </application>
 
 </manifest>

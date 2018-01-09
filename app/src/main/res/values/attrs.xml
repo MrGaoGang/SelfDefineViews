@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-
+    <attr name="bubbleColor" format="color"/>
+    <attr name="textColor" format="color"/>
+    <attr name="textSize" format="dimension"/>
     <!--雷达菜单-->
     <declare-styleable name="RadarMenuView">
         <attr name="position">
@@ -38,8 +40,8 @@
         <attr name="progressColor" format="color"/>
         <attr name="baseColor" format="color"/>
         <attr name="dotColor" format="color"/>
-        <attr name="textSize" format="dimension"/>
-        <attr name="textColor" format="color"/>
+        <attr name="textSize" />
+        <attr name="textColor"/>
     </declare-styleable>
 
     <!--仿愤怒小鸟弹弓-->
@@ -61,10 +63,17 @@
     </declare-styleable>
 
     <declare-styleable name="QQBubbleView">
-        <attr name="bubbleColor" format="color"/>
+        <attr name="bubbleColor"/>
         <attr name="bubbleTextColor" format="color"/>
         <attr name="maxDistance" format="dimension"/>
         <attr name="bubbleRadius" format="dimension"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="ChargeBubbleView">
+        <attr name="bubbleColor"/>
+        <attr name="textColor"/>
+        <attr name="textSize"/>
     </declare-styleable>
 
 

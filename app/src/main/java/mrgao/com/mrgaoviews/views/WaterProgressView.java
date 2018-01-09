@@ -246,14 +246,14 @@ public class WaterProgressView extends View {
         //确定贝塞尔曲线各个点的位置
         mFirstPath.reset();
 
-        mFirstPath.moveTo(distance, mProgressY);
+        mFirstPath.moveTo(0 - distance, mProgressY);
 
         //从左往右绘制
         if (!isRight2Left) {
 
-            //w为什么是mWaveCount*2，那是因为需要在不可见的区域多绘制几个曲线，这样就可以形成
+            //w为什么是mWaveCount*3，那是因为需要在不可见的区域多绘制几个曲线，这样就可以形成
             //波浪的效果，如果只有一个mWaveCount的话，那么就是一个简单的正选曲线
-            for (int i = 1; i <= mWaveCount * 2; i++) {
+            for (int i = 1; i <= mWaveCount * 3; i++) {
                 int x1 = distance + mWaveLength * i - mWaveLength / 2 - mStep;
 
                 if (i % 2 != 0) {
@@ -270,10 +270,10 @@ public class WaterProgressView extends View {
                 }
             }
 
-            mFirstPath.lineTo(distance + mWaveCount * mWaveLength,
+            mFirstPath.lineTo(distance + mWaveCount * 2 * mWaveLength,
                     distance + mWaterHeight);
 
-            mFirstPath.lineTo(distance,
+            mFirstPath.lineTo(0,
                     distance + mWaterHeight);
 
             mFirstPath.close();
@@ -291,7 +291,7 @@ public class WaterProgressView extends View {
             mSecondPath.reset();
 
             mSecondPath.moveTo(distance, mProgressY);
-            for (int i = -mWaveCount; i <= mWaveCount; i++) {
+            for (int i = -mWaveCount * 2; i <= mWaveCount; i++) {
                 int x1 = distance + mWaveLength * i - mWaveLength / 2 + mStep;
 
                 if (i % 2 != 0) {
@@ -307,7 +307,7 @@ public class WaterProgressView extends View {
                             mProgressY);
                 }
             }
-            mSecondPath.lineTo(distance + mWaveCount * mWaveLength,
+            mSecondPath.lineTo(distance + mWaveCount * mWaveLength * 2,
                     distance + mWaterHeight);
 
             mSecondPath.lineTo(0,
@@ -341,7 +341,8 @@ public class WaterProgressView extends View {
      * Return:
      **/
     private void runWave() {
-        mWaveValueAnimator = ValueAnimator.ofInt(0, mWaveLength * mWaveCount);
+        //乘以2的原因是想把时间吧循环的时间变长一点
+        mWaveValueAnimator = ValueAnimator.ofInt(0, mWaveLength * mWaveCount * 2);
         mWaveValueAnimator.setDuration(mSpeed);
         mWaveValueAnimator.setRepeatCount(ValueAnimator.INFINITE);
         mWaveValueAnimator.setInterpolator(new LinearInterpolator());
@@ -404,7 +405,11 @@ public class WaterProgressView extends View {
      */
     public void setWaveTime(int speed) {
         mSpeed = speed;
-        mWaveValueAnimator.setDuration(speed);
+        if (mWaveValueAnimator != null) {
+            mWaveValueAnimator.setDuration(speed);
+            mWaveValueAnimator.start();
+        }
+
         invalidate();
 
     }

@@ -50,5 +50,15 @@
         android:layout_height="wrap_content"
         android:id="@+id/qq"
         android:text="QQ气泡"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rotate"
+        android:text="无线旋转进度条"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/charge"
+        android:text="华为充电进度条"/>
 
 </LinearLayout>

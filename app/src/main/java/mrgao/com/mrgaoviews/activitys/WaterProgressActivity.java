@@ -12,6 +12,7 @@ public class WaterProgressActivity extends AppCompatActivity {
 
     WaterProgressView mWaterProgressView;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +21,7 @@ public class WaterProgressActivity extends AppCompatActivity {
         mWaterProgressView=(WaterProgressView)findViewById(R.id.waterProgress);
 
         mWaterProgressView.setProgress(30);
+        mWaterProgressView.setWaveTime(4000);
 
         ((Button)findViewById(R.id.pause)).setOnClickListener(new View.OnClickListener() {
             @Override
