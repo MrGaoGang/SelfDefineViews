@@ -33,6 +33,15 @@
         </activity>
         <activity android:name=".activitys.RotateActivity">
         </activity>
+        <activity android:name=".activitys.ViewGroupActivity">
+        </activity>
+        <activity android:name=".activitys.ExtendsViewActivity">
+        </activity>
+        <activity android:name=".activitys.WaterFlowActivity"/>
+        <activity android:name=".activitys.FlowActivity">
+        </activity>
+        <activity android:name=".activitys.MyLinActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -29,7 +29,7 @@ public class TwoFishView extends View {
     private int mPointColor = Color.RED;
     private int mHeight;
     private int mWidth;
-
+    ValueAnimator fadeAnimator;
 
     public TwoFishView(Context context) {
         this(context, null);
@@ -112,7 +112,7 @@ public class TwoFishView extends View {
     private void startAnimation() {
         for (int i = 0; i < numberOfCircle; i++) {
             final int index = i;
-            ValueAnimator fadeAnimator = ValueAnimator.ofFloat(0, 360);
+            fadeAnimator = ValueAnimator.ofFloat(0, 360);
             fadeAnimator.setRepeatCount(ValueAnimator.INFINITE);
             fadeAnimator.setDuration(1700);
             fadeAnimator.setStartDelay((index >= 5 ? index - 5 : index) * 100);
@@ -139,7 +139,8 @@ public class TwoFishView extends View {
         for (int i = 0; i < numberOfCircle; i++) {
             canvas.save();
             canvas.rotate(rotates[i], mWidth / 2, mHeight / 2);
-            canvas.drawCircle(circles[i].getCenter().x, circles[i].getCenter().y, circles[i].getRadius(), mPaint);
+            canvas.drawCircle(circles[i].getCenter().x, circles[i].getCenter().y,
+                    circles[i].getRadius(), mPaint);
             canvas.restore();
         }
     }

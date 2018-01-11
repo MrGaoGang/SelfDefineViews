@@ -6,23 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_gravity="center"
-    tools:context="mrgao.com.mrgaoviews.MainActivity">
+    tools:context="mrgao.com.mrgaoviews.activitys.FlowActivity">
 
     <Button
-        android:id="@+id/selfViewGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="自定义ViewGroup"/>
+        android:text="随机添加文字"
+        android:id="@+id/add"/>
+    <mrgao.com.mrgaoviews.group.FlowLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:id="@+id/flowLayout"
+        android:layout_height="wrap_content">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:id="@+id/selftView"
-        android:text="自定义View"
-        android:layout_height="wrap_content"/>
-
-
-
-
-
+    </mrgao.com.mrgaoviews.group.FlowLayout>
 </LinearLayout>

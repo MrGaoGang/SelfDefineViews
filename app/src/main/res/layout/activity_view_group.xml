@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mrgao.com.mrgaoviews.activitys.ViewGroupActivity">
+
+    <Button
+        android:id="@+id/radarViewBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="雷达菜单"/>
+    <Button
+        android:id="@+id/water"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="瀑布流容器"/>
+    <Button
+        android:id="@+id/selfLin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义线性布局"/>
+    <Button
+        android:id="@+id/selfDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自适应容器"/>
+</LinearLayout>

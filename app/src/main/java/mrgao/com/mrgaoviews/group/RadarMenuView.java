@@ -1,4 +1,4 @@
-package mrgao.com.mrgaoviews.views;
+package mrgao.com.mrgaoviews.group;
 
 import android.content.Context;
 import android.content.res.TypedArray;
