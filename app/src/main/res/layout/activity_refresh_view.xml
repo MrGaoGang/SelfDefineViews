@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mrgao.com.mrgaoviews.activitys.RefreshViewActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/show"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"/>
+    <mrgao.com.mrgaoviews.views.RefreshView
+        android:layout_width="50dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/refreshView"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/pasue"
+        android:text="暂停"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/start"
+        android:text="开始"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/restart"
+        android:text="重新开始"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

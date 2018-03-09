@@ -17,5 +17,6 @@ public class ChargeBubbleActivity extends AppCompatActivity {
         mChargeBubbleView = (ChargeBubbleView) findViewById(R.id.charge);
         mChargeBubbleView.setProgress(20);
 
+
     }
 }

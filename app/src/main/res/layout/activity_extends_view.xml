@@ -55,5 +55,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/charge"
         android:text="华为充电进度条"/>
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/refreshView"
+        android:text="下拉刷新的自定义view"/>
 </LinearLayout>

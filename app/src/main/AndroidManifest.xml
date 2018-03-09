@@ -42,6 +42,8 @@
         </activity>
         <activity android:name=".activitys.MyLinActivity">
         </activity>
+        <activity android:name=".activitys.RefreshViewActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -75,5 +75,11 @@ public class ExtendsViewActivity extends AppCompatActivity {
                 startActivity(new Intent(ExtendsViewActivity.this, RotateActivity.class));
             }
         });
+        ((Button) findViewById(R.id.refreshView)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ExtendsViewActivity.this, RefreshViewActivity.class));
+            }
+        });
     }
 }
