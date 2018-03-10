@@ -35,12 +35,17 @@ public class RefreshView extends View {
     //上下箭头的边界
     private int mTopVertex;
     private int mBottomVertex;
+    private int mLeftVertex;
+    private int mRightVertex;
+
     private int mTriangleHeight = 30;
     private int mTriangleWidth = 50;
 
     private Path mPath;
 
     private OnProgressEndListener mOnProgressEndListener;
+    private int mDuration = 2000;
+
 
     public RefreshView(Context context) {
         this(context, null);
@@ -93,6 +98,9 @@ public class RefreshView extends View {
         mTopVertex = mStrokeWidth + mHeight / 10;
         mBottomVertex = mHeight - mStrokeWidth - mHeight / 10;
 
+        mLeftVertex = mWidth / 3;
+        mRightVertex = mWidth - mStrokeWidth - mHeight / 10;
+
         mTriangleWidth = mWidth / 3;
         mTriangleHeight = mHeight / 4;
 
@@ -102,7 +110,7 @@ public class RefreshView extends View {
     @Override
     public void draw(Canvas canvas) {
         super.draw(canvas);
-
+        mPaint.setColor(mPointColor);
         mPaint.setStrokeWidth(mStrokeWidth);
         drawCircle(canvas);
 
@@ -117,9 +125,13 @@ public class RefreshView extends View {
                 drawDownArrow(canvas);
             }
 
+            if (mOnProgressEndListener != null) {
+                mOnProgressEndListener.progress();
+            }
+
         } else {
             canvas.drawCircle(mWidth / 2, mHeight / 2, mRadius, mPaint);
-            drawUpArrow(canvas);
+            drawComplete(canvas);
             if (mOnProgressEndListener != null) {
                 mOnProgressEndListener.end();
             }
@@ -151,15 +163,14 @@ public class RefreshView extends View {
      *
      * @param canvas
      */
-    private void drawUpArrow(Canvas canvas) {
+    private void drawComplete(Canvas canvas) {
         mPath.reset();
-        mPaint.setStyle(Paint.Style.FILL);
-        canvas.drawLine(mWidth / 2, mBottomVertex, mWidth / 2, mTopVertex + mTriangleHeight, mPaint);
-        mPaint.setStrokeWidth(mStrokeWidth - 1);
-        mPath.moveTo(mWidth / 2, mTopVertex);
-        mPath.lineTo(mWidth / 2 - mTriangleWidth / 2, mTopVertex + mTriangleHeight);
-        mPath.lineTo(mWidth / 2 + mTriangleWidth / 2, mTopVertex + mTriangleHeight);
-        mPath.close();
+        mPaint.setStyle(Paint.Style.STROKE);
+
+        mPath.moveTo(mLeftVertex, mHeight / 2);
+        mPath.lineTo(mWidth / 2, mHeight * 6 / 9);
+        mPath.lineTo(mWidth * 3 / 4, mHeight / 4);
+
         canvas.drawPath(mPath, mPaint);
         mPaint.setStyle(Paint.Style.STROKE);
     }
@@ -168,15 +179,16 @@ public class RefreshView extends View {
      * 更新进度的
      */
     public void start() {
+
         if (mValueAnimator != null) {
             mValueAnimator.cancel();
         }
 
         mValueAnimator = ValueAnimator.ofInt(0, 100);
 
-        mValueAnimator.setStartDelay(500);
+        mValueAnimator.setStartDelay(100);
         mValueAnimator.setInterpolator(new AccelerateDecelerateInterpolator());
-        mValueAnimator.setDuration(3000);
+        mValueAnimator.setDuration(mDuration);
         mValueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator valueAnimator) {
@@ -188,6 +200,8 @@ public class RefreshView extends View {
 
         mValueAnimator.start();
     }
+
+
 
     public void setStrokeWidth(int strokeWidth) {
         if (mStrokeWidth > 1) {
@@ -217,11 +231,23 @@ public class RefreshView extends View {
         mOnProgressEndListener = onProgressEndListener;
     }
 
+    public void setDuration(int duration) {
+        mDuration = duration;
+        postInvalidate();
+    }
+
+    public void setPointColor(int pointColor) {
+        mPointColor = pointColor;
+        mPaint.setColor(mPointColor);
+    }
+
     public interface OnProgressEndListener {
         void end();
 
         void pause();
 
         void restart();
+
+        void progress();
     }
 }
